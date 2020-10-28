@@ -1,5 +1,12 @@
 body {
     margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
 }
 
 h1,
@@ -129,9 +136,4 @@ button:hover {
 footer {
     text-align: center;
     margin: 10px;
-}
-
-#contact-footer {
-    position: relative;
-    top: 200px;
 }
