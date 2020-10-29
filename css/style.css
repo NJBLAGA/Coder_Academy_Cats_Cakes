@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 h1,
@@ -7,131 +7,182 @@ h3,
 h4,
 a,
 p {
-    font-family: Arial;
+  font-family: Arial;
 }
 
 h1 {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 input,
 textarea {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 button {
-    padding: 10px;
-    font-size: 20px;
-    background-color: orangered;
-    border: none;
-    border-radius: 5px;
-    opacity: 50%;
+  padding: 10px;
+  font-size: 20px;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  opacity: 50%;
 }
 
 button:hover {
-    opacity: 100%;
-    transition: 0.3s;
+  opacity: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .blue-background {
-    background-color: lightskyblue;
+  background-color: lightskyblue;
 }
 
 .nav-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
 }
 
 @media screen and (max-width: 700px) {
-    .nav-bar {
-        flex-direction: column-reverse;
-    }
-    #products-content {
-        flex-direction: column;
-    }
-    #company-page {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+  .nav-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #products-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #company-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 #Font-page-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
 }
 
 #Front-page-img {
-    height: auto;
-    width: 50%;
-    border-radius: 5px;
+  height: auto;
+  width: 50%;
+  border-radius: 5px;
 }
 
 .product-img {
-    width: 200px;
+  width: 200px;
 }
 
 #products-content {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .products-tile {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #company-page {
-    display: flex;
-    margin: 30px;
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 700px) {
-    #cat-baking {
-        max-width: 40%;
-        margin-right: 20px;
-    }
-    #company-about {
-        padding: 60px;
-    }
-    #product-tile {
-        margin: 5px;
-    }
-    #product-img {
-        width: 400px;
-    }
+  #cat-baking {
+    max-width: 40%;
+    margin-right: 20px;
+  }
+  #company-about {
+    padding: 60px;
+  }
+  #product-tile {
+    margin: 5px;
+  }
+  #product-img {
+    width: 400px;
+  }
 }
 
 #contact-page {
-    text-align: center;
+  text-align: center;
 }
 
 #contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .padding-10 {
-    padding: 10px;
+  padding: 10px;
 }
 
 footer {
-    text-align: center;
-    margin: 10px;
+  text-align: center;
+  margin: 10px;
 }
 
 #contact-footer {
-    position: relative;
-    top: 200px;
+  position: relative;
+  top: 200px;
 }
+/*# sourceMappingURL=style.css.map */
